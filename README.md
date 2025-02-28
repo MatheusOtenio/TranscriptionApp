@@ -1,5 +1,11 @@
 # Transcrição de Vídeo do YouTube
 
+## Imagens  
+
+![Interface do Site](./imagem/site-trancription.png)  
+
+![Exemplo de Transcrição](./imagem/site-trancription2.png)  
+
 ## Descrição
 
 Este projeto utiliza um backend desenvolvido com **Python** e **FastAPI** para realizar a transcrição de um vídeo do YouTube via link. No frontend, foi utilizado **React** com **Vite** para configurar a interface.
@@ -38,9 +44,3 @@ Este projeto utiliza um backend desenvolvido com **Python** e **FastAPI** para r
    ```
    http://localhost:5173/
    ```
-
-## Imagens  
-
-![Interface do Site](./imagem/site-trancription.png)  
-
-![Exemplo de Transcrição](./imagem/site-trancription2.png)  
