@@ -87,4 +87,3 @@ async def transcrever_video(request: VideoRequest):
         raise he
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
