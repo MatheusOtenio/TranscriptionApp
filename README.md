@@ -20,8 +20,8 @@ Este projeto utiliza um backend desenvolvido com **Python** e **FastAPI** para r
 1. Clone o repositório:
 
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+git clone https://github.com/MatheusOtenio/TranscriptionApp.git
+cd TranscriptionApp
    ```
 
 2. Abra o terminal e pressione `Ctrl + Shift + 5` para dividir a tela.
