@@ -27,3 +27,16 @@ Este projeto permite transcrever vídeos do YouTube através de um link, utiliza
    ```bash
    git clone https://github.com/seu-usuario/transcricao-youtube.git
    cd transcricao-youtube
+
+2. Backend:
+# Crie e ative um ambiente virtual (recomendado)
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+
+3. Frontend:
+cd frontend
+npm install
