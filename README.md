@@ -1,42 +1,34 @@
-# YouTube Video Transcription Project
+/*
+README - Transcrição de Vídeo do YouTube
 
-Este projeto permite transcrever vídeos do YouTube através de um link, utilizando um backend em Python com FastAPI e um frontend em React/Vite para a interface.
+DESCRIÇÃO:
+Este projeto utiliza um backend desenvolvido com Python e FastAPI para realizar a transcrição de um vídeo do YouTube via link. No frontend, foi utilizado React com Vite para configurar a interface.
 
-## Funcionalidades
+TECNOLOGIAS UTILIZADAS:
+- Backend: Python, FastAPI
+- Frontend: React, Vite
 
-- **Backend (FastAPI):**
-  - Recebe um link do YouTube.
-  - Baixa o áudio do vídeo.
-  - Realiza a transcrição usando a biblioteca `whisper` (OpenAI).
-  - Retorna o texto transcrito.
-
-- **Frontend (React/Vite):**
-  - Interface intuitiva para inserção do link.
-  - Exibe o status do processamento (carregamento, conclusão, erro).
-  - Mostra a transcrição resultante.
-
-## Pré-requisitos
-
-- [Python 3.9+](https://www.python.org/downloads/)
-- [Node.js](https://nodejs.org/) (para o frontend)
-- [FFmpeg](https://ffmpeg.org/download.html) (instalação necessária para a biblioteca `whisper`)
-
-## Instalação
+COMO EXECUTAR:
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/transcricao-youtube.git
-   cd transcricao-youtube
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-2. Backend:
-# Crie e ative um ambiente virtual (recomendado)
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+2. Abra o terminal e pressione Ctrl + Shift + 5 para dividir a tela.
 
-# Instale as dependências
-pip install -r requirements.txt
+3. No primeiro terminal, rode o backend:
+   uvicorn app:app --reload
 
-3. Frontend:
-cd frontend
-npm install
+4. No segundo terminal, inicie o frontend:
+   cd frontend
+   npm run dev
+
+5. Acesse a aplicação pelo navegador:
+   http://localhost:5173/
+
+IMAGENS:
+
+[Interface do Site](/imagem/site-trancription.png)
+
+[Exemplo de Transcrição](/imagem/site-trancription2.png)
+*/
