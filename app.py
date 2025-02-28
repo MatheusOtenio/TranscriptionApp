@@ -1,12 +1,12 @@
-from fastapi import FastAPI, HTTPException # type: ignore
-from pydantic import BaseModel # type: ignore
-import yt_dlp # type: ignore
-import whisper # type: ignore
-import subprocess
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import yt_dlp
+import whisper
+import ffmpeg
 import os
 import uuid
-from fastapi.middleware.cors import CORSMiddleware # type: ignore
-from fastapi.staticfiles import StaticFiles # type: ignore
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
@@ -18,10 +18,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Configuração do FFmpeg
-ffmpeg_path = r"C:\ffmpeg\ffmpeg-7.1-essentials_build\bin"
-os.environ["PATH"] = ffmpeg_path + os.pathsep + os.environ["PATH"]
 
 # Configuração do diretório de saída
 output_dir = os.path.join(os.getcwd(), "frontend", "data")
@@ -53,12 +49,9 @@ def extrair_audio(video_path: str) -> str:
     """Extrai o áudio do vídeo usando FFmpeg."""
     audio_path = video_path.replace(".webm", ".wav")
     try:
-        subprocess.run([
-            os.path.join(ffmpeg_path, "ffmpeg.exe"),
-            "-i", video_path, "-vn", "-acodec", "pcm_s16le", "-ar", "44100", "-ac", "2", audio_path
-        ], check=True)
+        ffmpeg.input(video_path).output(audio_path, format='wav', acodec='pcm_s16le', ar='44100', ac='2').run()
         return audio_path
-    except subprocess.CalledProcessError as e:
+    except ffmpeg.Error as e:
         raise HTTPException(status_code=500, detail=f"Erro ao extrair áudio: {str(e)}")
 
 def transcrever_audio(audio_path: str) -> str:
