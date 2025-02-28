@@ -1,10 +1,5 @@
-# Transcrição de Vídeo do YouTube
-
-## Imagens  
-
+# Transcrição de Vídeo do YouTube  
 ![Exemplo de Transcrição](./imagem/site-trancription2.png)  
-![Interface do Site](./imagem/site-trancription.png)  
-
 
 ## Descrição
 
@@ -20,8 +15,8 @@ Este projeto utiliza um backend desenvolvido com **Python** e **FastAPI** para r
 1. Clone o repositório:
 
    ```sh
-git clone https://github.com/MatheusOtenio/TranscriptionApp.git
-cd TranscriptionApp
+   git clone https://github.com/MatheusOtenio/TranscriptionApp.git
+   cd TranscriptionApp
    ```
 
 2. Abra o terminal e pressione `Ctrl + Shift + 5` para dividir a tela.
@@ -44,3 +39,4 @@ cd TranscriptionApp
    ```
    http://localhost:5173/
    ```
+![Interface do Site](./imagem/site-trancription.png)  
