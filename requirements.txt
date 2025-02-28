@@ -1,1 +1,8 @@
-imageio[ffmpeg]
+fastapi
+uvicorn
+pydantic
+yt-dlp
+whisper
+torch
+numpy
+ffmpeg-python
