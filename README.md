@@ -2,9 +2,9 @@
 
 ## Imagens  
 
+![Exemplo de Transcrição](./imagem/site-trancription2.png)  
 ![Interface do Site](./imagem/site-trancription.png)  
 
-![Exemplo de Transcrição](./imagem/site-trancription2.png)  
 
 ## Descrição
 
