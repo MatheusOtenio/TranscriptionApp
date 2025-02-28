@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     setTranscription("");
     try {
-      const response = await fetch("https://transcriptionapp-o3yl.onrender.com/", {
+      const response = await fetch("http://127.0.0.1:8000/transcrever/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
