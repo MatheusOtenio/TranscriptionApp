@@ -1,5 +1,5 @@
-/*
-README - Transcrição de Vídeo do YouTube
+
+Transcrição de Vídeo do YouTube
 
 DESCRIÇÃO:
 Este projeto utiliza um backend desenvolvido com Python e FastAPI para realizar a transcrição de um vídeo do YouTube via link. No frontend, foi utilizado React com Vite para configurar a interface.
@@ -31,4 +31,3 @@ IMAGENS:
 [Interface do Site](/imagem/site-trancription.png)
 
 [Exemplo de Transcrição](/imagem/site-trancription2.png)
-*/
